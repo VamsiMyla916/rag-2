@@ -1,0 +1,14 @@
+streamlit
+transformers
+torch
+sentence-transformers
+faiss-cpu
+pypdf
+accelerate
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters  # <-- NEW: Add this line
+numpy
+docx2txt
+nltk
