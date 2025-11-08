@@ -167,7 +167,7 @@ if uploaded_file is not None:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
         
-        # --- NOTE: The chat_input is MOVING from here ---
+       
 
     # --- DOCUMENT STATS TAB ---
     with tab2:
@@ -181,8 +181,7 @@ if uploaded_file is not None:
         if "full_text" in st.session_state:
             st.text_area("Content", st.session_state.full_text, height=400, disabled=True)
 
-    # --- 4. CHAT INPUT (MOVED TO THE BOTTOM OF THE SCRIPT) ---
-    # This makes it "dock" to the bottom of the viewport
+    
     if prompt := st.chat_input("Ask a question about your document..."):
         
         # 1. Add user message to state (but don't display yet)
